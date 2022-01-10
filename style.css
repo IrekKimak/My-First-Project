@@ -1,0 +1,236 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trenujemy-online {
+  padding: 50px;
+}
+
+.trenujemy {
+  color: #413fb5;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.online {
+  color: #413fb5;
+  font-family: Rubik;
+  font-size: 30px;
+}
+
+.login-section {
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  border-radius: 7px;
+  display: flex;
+  height: 790px;
+  background: #ffffff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.facebook {
+  width: 27px;
+  height: 27px;
+}
+.instagram {
+  width: 27px;
+  height: 27px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #413fb5;
+  border-radius: 7px;
+  height: 50px;
+  column-gap: 50px;
+  background-color: white;
+  font-family: Rubik;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+.button:hover {
+  background-color: hsl(209, 68%, 77%);
+  cursor: pointer;
+}
+
+.image {
+  display: flex;
+  flex: 1;
+  height: 790px;
+}
+.text-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  letter-spacing: -0.0571429px;
+}
+
+.divider {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  background-color: #edebf0;
+  border-radius: 18px;
+  width: 100%;
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+}
+
+#first-name {
+  height: 56px;
+  border: 1px solid #edebf0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  font-family: Rubik;
+  font-size: 16px;
+  letter-spacing: -0.0571429px;
+  margin-top: 10px;
+}
+
+.last-name {
+  height: 56px;
+  border: 1px solid #edebf0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  font-family: Rubik;
+  font-size: 16px;
+  letter-spacing: -0.0571429px;
+  margin-top: 10px;
+}
+
+.first.name {
+  display: flex;
+  flex-direction: column;
+}
+.last.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  border: 1px solid #edebf0;
+  box-sizing: border-box;
+  border-radius: 7px;
+  height: 56px;
+  padding-left: 18px;
+  font-family: Rubik;
+  font-size: 16px;
+  letter-spacing: -0.0571429px;
+  width: 100%;
+}
+
+.password {
+  border: 1px solid #edebf0;
+  box-sizing: border-box;
+  border-radius: 7px;
+  height: 56px;
+  padding-left: 18px;
+  font-family: Rubik;
+  font-size: 16px;
+  letter-spacing: -0.0571429px;
+  width: 100%;
+}
+label {
+  display: flex;
+  color: #64606a;
+  position: relative;
+  left: 20px;
+  top: 15px;
+  background-color: white;
+  width: 95px;
+  font-family: Rubik;
+  font-size: 10px;
+  letter-spacing: 0.333333px;
+}
+
+::placeholder {
+  display: flex;
+  color: #190f27;
+  height: 23px;
+  font-size: 16px;
+}
+.rejestracja-button {
+  display: flex;
+  justify-content: center;
+  background: #413fb5;
+  border-radius: 7px;
+  color: white;
+  width: 483px;
+  padding: 15px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.rejestracja-button:hover {
+  background-color: hsl(209, 68%, 77%);
+  cursor: pointer;
+}
+.konto {
+  color: #64606a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Rubik;
+  font-size: 14px;
+}
+h1 {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.check {
+  height: 18px;
+  width: 18px;
+}
+a {
+  color: #64606a;
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .login-section {
+    width: unset;
+  }
+  .image {
+    display: none;
+  }
+
+  .names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 10px;
+  }
+  .rejestracja-buttons {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+}
