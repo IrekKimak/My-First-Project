@@ -226,6 +226,7 @@ a {
     justify-content: space-between;
     flex: 1;
     margin-top: 10px;
+    width: 100%;
   }
   .rejestracja-buttons {
     width: 100%;
