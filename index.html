@@ -14,41 +14,53 @@
       href="https://fonts.googleapis.com"
     />
 
-    <title>Moj Pierwszy Projekt HTML & CSS</title>
+    <title>My First HTML & CSS Project</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="trenujemy-online">
-        <span class="trenujemy">Trenujemy</span>
-        <span class="online">Online</span>
+      <div class="training-online">
+        <span class="trenujemy">Online</span>
+        <span class="online">Training</span>
       </div>
       <div class="login-section">
         <div class="login-form">
-          <h1>Zarejestruj sie jako trener</h1>
+          <h1>Register as a Trainer</h1>
 
           <form>
             <button class="button">
-              Rejestracja przez Facebook
               <img
                 class="facebook"
                 src="images/facebook.png"
                 alt="facebook logo"
               />
+              <a
+                class="reg-link"
+                href="https://m.facebook.com/login/?locale=en_GB"
+                target="blank"
+                style="text-decoration: none"
+                >Register with Facebook
+              </a>
             </button>
 
             <button class="button">
-              Rejestracja przez Instagram
               <img
                 class="instagram"
-                src="/images/instagram.png"
+                src="images/instagram.png"
                 alt="instagram logo"
               />
+              <a
+                class="reg-link"
+                href="https://www.instagram.com/accounts/login/?"
+                target="blank"
+                style="text-decoration: none"
+                >Register with Instagram
+              </a>
             </button>
           </form>
 
           <div class="text-divider">
             <div class="divider"></div>
-            <div>Lub za pomoca maila</div>
+            <div>Or with the email address</div>
             <div class="divider"></div>
           </div>
 
@@ -69,7 +81,7 @@
           <label for="password">Password</label>
           <input class="password" type="password" placeholder="Password" />
 
-          <div class="konto">
+          <div class="account">
             <input class="check" type="checkbox" />
             <span>
               I have read the
@@ -77,7 +89,7 @@
             </span>
           </div>
           <form>
-            <button class="rejestracja-button">Zarejestruj sie za darmo</button>
+            <button class="registration-button">Free Registration</button>
           </form>
 
           <div class="text-divider">
@@ -86,10 +98,10 @@
             <div class="divider"></div>
           </div>
 
-          <div class="konto">
+          <div class="account">
             <span>
-              Masz juz konto?
-              <a href="">Zaloguj sie</a>
+              Already have account?
+              <a href="">Login</a>
             </span>
           </div>
         </div>
