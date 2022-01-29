@@ -1,24 +1,28 @@
+body {
+  font-family: Rubik;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
 }
 
 .training-online {
-  padding: 50px;
+  padding: 30px;
 }
 
-.trenujemy {
+.training {
   color: #413fb5;
-  font-family: Rubik;
   font-weight: bold;
   font-size: 30px;
 }
 
 .online {
   color: #413fb5;
-  font-family: Rubik;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .login-section {
@@ -34,8 +38,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
-  margin-left: 65px;
-  margin-right: 65px;
+  margin: 0px 65px 60px 65px;
 }
 
 .facebook {
@@ -50,23 +53,25 @@
 .button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border: 2px solid #413fb5;
   border-radius: 7px;
   height: 50px;
-  column-gap: 50px;
-  background-color: white;
-  font-family: Rubik;
+  background-color: #ffffff;
   font-size: 14px;
   width: 100%;
   margin-bottom: 15px;
-  margin-bottom: 20px;
+  color: #190f27;
 }
 .button:hover {
   background-color: hsl(209, 68%, 77%);
   cursor: pointer;
 }
-
+.reg-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .image {
   display: flex;
   flex: 1;
@@ -77,8 +82,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Rubik;
+  font-size: 16px;
+  line-height: 23px;
   letter-spacing: -0.0571429px;
+  padding: 20px 0px 15px 0px;
 }
 
 .divider {
@@ -91,33 +98,30 @@
 }
 .names {
   display: flex;
-  justify-content: space-between;
+  column-gap: 15px;
 }
-
 #first-name {
+  width: 100%;
   height: 56px;
   border: 1px solid #edebf0;
   border-radius: 7px;
   box-sizing: border-box;
   padding-left: 18px;
-  font-family: Rubik;
   font-size: 16px;
   letter-spacing: -0.0571429px;
   margin-top: 10px;
-  width: 100%;
 }
 
 .last-name {
+  width: 100%;
   height: 56px;
   border: 1px solid #edebf0;
   border-radius: 7px;
   box-sizing: border-box;
   padding-left: 18px;
-  font-family: Rubik;
   font-size: 16px;
   letter-spacing: -0.0571429px;
   margin-top: 10px;
-  width: 100%;
 }
 
 .first.name {
@@ -133,24 +137,24 @@
   border: 1px solid #edebf0;
   box-sizing: border-box;
   border-radius: 7px;
+  width: 100%;
   height: 56px;
   padding-left: 18px;
-  font-family: Rubik;
   font-size: 16px;
   letter-spacing: -0.0571429px;
-  width: 100%;
+  margin-top: 10px;
 }
 
 .password {
   border: 1px solid #edebf0;
   box-sizing: border-box;
   border-radius: 7px;
+  width: 100%;
   height: 56px;
   padding-left: 18px;
-  font-family: Rubik;
   font-size: 16px;
   letter-spacing: -0.0571429px;
-  width: 100%;
+  margin-top: 10px;
 }
 label {
   display: flex;
@@ -159,8 +163,7 @@ label {
   left: 20px;
   top: 15px;
   background-color: white;
-  width: 95px;
-  font-family: Rubik;
+  width: fit-content;
   font-size: 10px;
   letter-spacing: 0.333333px;
 }
@@ -174,49 +177,56 @@ label {
 .registration-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #413fb5;
   border-radius: 7px;
   color: white;
-  width: 483px;
-  padding: 15px;
-  font-family: Rubik;
-  font-weight: 500;
-  font-size: 14px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 18px;
 }
+
 .registration-button:hover {
   background-color: hsl(209, 68%, 77%);
   cursor: pointer;
 }
 .account {
-  color: #64606a;
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;
-  font-family: Rubik;
   font-size: 14px;
+  color: #64606a;
+}
+
+.terms {
+  color: #64606a;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 20px 0px 20px 0px;
 }
 h1 {
-  font-family: Rubik;
   font-weight: 500;
   font-size: 24px;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 30px;
+  color: #190f27;
 }
 .check {
   height: 18px;
   width: 18px;
 }
-a {
-  color: #190f27;
+
+.grey-text {
+  color: #64606a;
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
   .login-section {
     width: unset;
+    margin-bottom: 50px;
+    height: unset;
   }
   .image {
     display: none;
@@ -226,8 +236,29 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+  }
+
+  #first-name {
+    height: 56px;
+    border: 1px solid #edebf0;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding-left: 18px;
+    font-size: 16px;
+    letter-spacing: -0.0571429px;
     margin-top: 10px;
     width: 100%;
+  }
+
+  .last-name {
+    width: 100%;
+    height: 56px;
+    border: 1px solid #edebf0;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding-left: 18px;
+    font-size: 16px;
+    letter-spacing: -0.0571429px;
+    margin-top: 10px;
   }
 }

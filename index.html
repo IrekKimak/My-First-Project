@@ -19,91 +19,92 @@
   <body>
     <div class="wrapper">
       <div class="training-online">
-        <span class="trenujemy">Online</span>
-        <span class="online">Training</span>
+        <span class="training">Training</span>
+        <span class="online">Online</span>
       </div>
+
       <div class="login-section">
         <div class="login-form">
           <h1>Register as a Trainer</h1>
 
           <form>
-            <button class="button">
-              <img
-                class="facebook"
-                src="images/facebook.png"
-                alt="facebook logo"
-              />
+            <div class="reg-buttons">
               <a
-                class="reg-link"
                 href="https://m.facebook.com/login/?locale=en_GB"
                 target="blank"
                 style="text-decoration: none"
-                >Register with Facebook
+                class="button"
+              >
+                <img
+                  class="facebook"
+                  src="images/facebook.png"
+                  alt="facebook logo"
+                />
+                <span>Register with Facebook</span>
               </a>
-            </button>
 
-            <button class="button">
-              <img
-                class="instagram"
-                src="images/instagram.png"
-                alt="instagram logo"
-              />
               <a
-                class="reg-link"
                 href="https://www.instagram.com/accounts/login/?"
                 target="blank"
                 style="text-decoration: none"
-                >Register with Instagram
+                class="button"
+              >
+                <img
+                  class="instagram"
+                  src="images/instagram.png"
+                  alt="instagram logo"
+                />
+                <span>Register with Instagram</span>
               </a>
-            </button>
-          </form>
-
-          <div class="text-divider">
-            <div class="divider"></div>
-            <div>Or with the email address</div>
-            <div class="divider"></div>
-          </div>
-
-          <div class="names">
-            <div class="first.name">
-              <label for="first-name">First Name </label>
-              <input id="first-name" type="text" placeholder="First Name" />
             </div>
 
-            <div class="last.name">
-              <label for="last-name">Last Name</label>
-              <input class="last-name" type="text" placeholder="Full Name" />
+            <div class="text-divider">
+              <div class="divider"></div>
+              <span>Or with the email address</span>
+              <div class="divider"></div>
             </div>
-          </div>
-          <label for="email">Email Address</label>
-          <input class="email" type="email" placeholder="Email Address" />
 
-          <label for="password">Password</label>
-          <input class="password" type="password" placeholder="Password" />
+            <div class="names">
+              <div class="first.name">
+                <label for="first-name">First Name </label>
+                <input id="first-name" type="text" placeholder="First Name" />
+              </div>
 
-          <div class="account">
-            <input class="check" type="checkbox" />
-            <span>
-              I have read the
-              <a href=""> Terms & Conditions</a>
-            </span>
-          </div>
-          <form>
-            <button class="registration-button">Free Registration</button>
+              <div class="last.name">
+                <label for="last-name">Last Name</label>
+                <input class="last-name" type="text" placeholder="Full Name" />
+              </div>
+            </div>
+            <label for="email">Email Address</label>
+            <input class="email" type="email" placeholder="Email Address" />
+
+            <label for="password">Password</label>
+            <input class="password" type="password" placeholder="Password" />
+
+            <div class="terms">
+              <input class="check" type="checkbox" />
+              <span>
+                I have read the
+                <a href="" class="grey-text"> Terms & Conditions</a>
+              </span>
+            </div>
+            <form>
+              <button class="registration-button">Free Registration</button>
+            </form>
+
+            <div class="text-divider">
+              <div class="divider"></div>
+              <br />
+              <div class="divider"></div>
+            </div>
+
+            <div class="account">
+              <span>
+                Already have account?
+                <a href="#" class="grey-text">Login</a>
+              </span>
+            </div>
           </form>
-
-          <div class="text-divider">
-            <div class="divider"></div>
-            <br />
-            <div class="divider"></div>
-          </div>
-
-          <div class="account">
-            <span>
-              Already have account?
-              <a href="">Login</a>
-            </span>
-          </div>
         </div>
 
         <div class="image">
